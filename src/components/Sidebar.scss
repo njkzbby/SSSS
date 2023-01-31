@@ -1,0 +1,32 @@
+.burger {
+  padding-top: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  max-width: 50px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.burger__inner {
+  width: 100%;
+  height: 4px;
+  background: white;
+  margin: 5px 0;
+  transition: all 0.5s;
+}
+
+.burger__inner--first {
+  margin-left: auto;
+}
+
+.burger__inner--third {
+  transform: translateX(-25%);
+}
+
+.burger:hover .burger__inner--first {
+  width: 75%;
+}
+
+.burger--opened .burger__inner--third {
+  transform: translateX(25%);
+}
