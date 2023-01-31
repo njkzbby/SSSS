@@ -2,18 +2,13 @@ import React from "react";
 import { Navbar, Nav, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styled from "styled-components";
+import "./Navibar.scss";
 
 const Styles = styled.div`
   .headerColor {
-    z-index: 20;
     background-color: green;
     box-shadow: 0px 0px 3px black;
-    position: sticky;
-    top: 0;
-  }
-  .sticky-nav {
-    position: sticky;
-    top: 0;
+    heigth: 55px;
   }
 `;
 
@@ -22,7 +17,7 @@ export default function NaviBar() {
     <>
       <Styles>
         <div className="headerColor">
-          <Navbar collapseOnSelect className="sticky-nav" expand="lg">
+          <Navbar collapseOnSelect expand="lg">
             <Navbar.Brand href="/" className="LogoName ml-2">
               NJFTNL
             </Navbar.Brand>

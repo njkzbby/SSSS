@@ -5,7 +5,6 @@ import "./Sidebar.scss";
 const Styles = styled.div`
   .sideBar {
     background-color: green;
-    z-index: -1;
     transition: width 0.4s;
     width: 75px;
   }
@@ -25,7 +24,7 @@ function Sidebar() {
     <>
       <Styles>
         <div
-          className={`position-fixed h-100 sideBar${show ? " isShow" : ""}`}
+          className={`h-100 position-fixed sideBar${show ? " isShow" : ""}`}
           variant="green"
         >
           <div

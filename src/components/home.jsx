@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const Styles = styled.div`
   .homePage {
     background: url("/assets/gora.png") no-repeat;
-    overflow-y: scroll;
+    margin-left: 75px;
   }
 `;
 
@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Styles>
         <div className="homePage">
-          <img src="/assets/gora.png" alt="ss" />
+          <img src="/assets/gora.png" />
         </div>
       </Styles>
     </>
